@@ -126,8 +126,12 @@ a{
     border: none;
     font-size: 18px;
 }
+.form-group p{
+    margin-top: 10px;
+}
 .form-group input{
-    margin-bottom: 15px;
+    width: 300px;
+    
     height: 18px;
     margin-left: 10px;
 }
@@ -142,7 +146,12 @@ a{
     width: 80px;
     margin-left: 10px;
 }
-
+.form-label{
+    float: left;
+}
+.form-input{
+    margin: 0px;
+}
 .user-form{
     display: inline;
 }

@@ -7,12 +7,21 @@
             <form method="POST">
                 {% csrf_token %}
                 <fieldset class="form-group">
-                    {% for field in login_form %}
-                        <p>
-                            {{ field.label_tag }}
-                            {{ field }}
-                        </p>
-                    {% endfor %}
+                    <div class='form-label'>
+                        {% for field in login_form %}
+                            <p>
+                                {{ field.label_tag }}
+                            </p>
+                        {% endfor %}
+                    </div>
+                    <div class='form-input'>
+                        {% for field in login_form %}
+                            <p>
+                                {{ field }}
+                            </p>
+                        {% endfor %}
+                    </div>
+                    
                     {% for field in login_form %}
                         {% for error in field.errors %}
                             <span class="user-error">{{ error }}</span>
